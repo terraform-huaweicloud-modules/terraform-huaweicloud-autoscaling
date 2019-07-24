@@ -49,7 +49,7 @@ possible to use existing scaling configuration only if you specify `as_config_id
 | max_instance_number  | The maximum number of ECS instances  | string  | `"1"`  | no  |
 | cool_down_time  | The cooling duration(in seconds)  | string  | `"300"`  | no  |
 | lb_listener_id  | The ELB listener IDs, supporting up to three listeners, which are separated using a comma(,)  | string  | `""`  | no  |
-| network_id  | The subnet Network ID  | string  | -  | yes  |
+| network_id  | The subnet Network ID  | string  | `-`  | yes  |
 | security_group  | The security group ID to associate with the autoscaling group  | string  | `-`  | yes  |
 | vpc_id  | The VPC ID  | string  | `-`  | yes  |
 | health_periodic_audit_method  | The health check method for instances in the AS group. Valid options are ELB_AUDIT and NOVA_AUDIT  | string  | `"NOVA_AUDIT"`  | no  |
