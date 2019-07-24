@@ -1,6 +1,4 @@
-Huawei Cloud Auto Scaling Terraform Module
-terraform-huaweicloud-autoscaling
----
+# Huawei Cloud Auto Scaling Terraform Module
 
 Terraform moudle which create Auto Scaling resource on Huawei Cloud.
 
