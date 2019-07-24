@@ -1,5 +1,5 @@
 # Create AS Configuration
-resource "flexibleengine_as_configuration_v1" "this" {
+resource "huaweicloud_as_configuration_v1" "this" {
   count                      = "${var.as_config_id=="" ? 1 : 0}"
   scaling_configuration_name = "${var.configuration_name}"
 
@@ -10,9 +10,9 @@ resource "flexibleengine_as_configuration_v1" "this" {
 }
 
 # Create AS Group
-resource "flexibleengine_as_group_v1" "this" {
+resource "huaweicloud_as_group_v1" "this" {
   scaling_group_name       = "${var.group_name}"
-  scaling_configuration_id = "${var.as_config_id=="" ? join("",flexibleengine_as_configuration_v1.this.*.id) : var.as_config_id}"
+  scaling_configuration_id = "${var.as_config_id=="" ? join("",huaweicloud_as_configuration_v1.this.*.id) : var.as_config_id}"
   available_zones          = "${var.availability_zones}"
   desire_instance_number   = "${var.desire_instance_number}"
   min_instance_number      = "${var.min_instance_number}"
