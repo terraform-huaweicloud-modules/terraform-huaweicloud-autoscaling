@@ -1,4 +1,4 @@
-# Autoscaling basic example
+# Autoscaling with existing scaling configuration example
 
 Configuration in this directory creates Autoscaling group and Autoscaling configuration.
 

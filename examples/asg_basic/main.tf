@@ -1,8 +1,8 @@
 provider "huaweicloud" {
-  access_key = "AK"
-  secret_key = "SK"
-  auth_url = "https://iam.cn-north-1.myhwclouds.com:443/v3"
-  region = "cn-north-1"
+  access_key  = "AK"
+  secret_key  = "SK"
+  auth_url    = "https://iam.cn-north-1.myhwclouds.com:443/v3"
+  region      = "cn-north-1"
   tenant_name = "cn-north-1"
 }
 
